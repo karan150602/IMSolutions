@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v3.9.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.9.1/mapbox-gl.js"></script>
+    <link rel="icon" type="image/png" href="assets/IMS_2.png" sizes="512x512">
+    <title>International Mobility Solutions</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav>
+        <div class="nav__bar">
+          <div class="logo nav__logo">
+            <a href="#"><img src="assets/IMS_2.png" alt="logo" /></a>
+          </div>
+          <span class="nav__brand"> </span>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-3-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#service">SERVICES</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+          <li><a href="#team">TEAM</a></li>
+          <button
+            class="btn"
+            onclick="window.location.href='tel:+91 9999160740'"
+          >
+            Call Us
+          </button>
+        </ul>
+      </nav>
+      <div class="section__container header__container" id="home">
+        <div class="header__content">
+          <h1>Corporate Mobility Solutions</h1>
+          <div class="header__btn">
+            <button class="btn" onclick="location.href='#about';">
+              Read More
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="banner__container">
+      <div class="banner__card">
+        <h4>Resilient by design, relentless in execution.</h4>
+      </div>
+      <div class="banner__card">
+        <h4>We turn challenges into opportunities.</h4>
+      </div>
+      <div class="banner__image">
+        <img src="assets/banner.jpg" alt="banner" />
+      </div>
+    </section>
+
+    <section class="section__container experience__container" id="about">
+      <div class="experience__image">
+        <img src="assets/about.jpg" alt="aboutUS" />
+      </div>
+      <div class="experience__content">
+        <p class="section__subheader">WHO WE ARE</p>
+        <h2 class="section__header">
+          We are International Mobility Solutions Pvt Ltd
+        </h2>
+        <p class="section__description">
+          We are your trusted partner in corporate mobility solutions,
+          specializing in reliable car rentals, eco-friendly Electric Vehicles
+          (EVs), and tailored services. From Spot Rentals and Employee
+          Transportation to Long-Term Rentals and End-to-End Mobility Solutions,
+          we deliver seamless, sustainable, and efficient transportation
+          experiences. With a focus on convenience and exceptional service, we
+          are here to move your workforce smarter, greener, and better.
+        </p>
+      </div>
+    </section>
+
+    <section class="service" id="service">
+      <div class="section__container service__container">
+        <p class="section__subheader">OUR SERVICES</p>
+        <h2 class="section__header">Tailored Mobility Solutions</h2>
+        <p class="section__description">
+          Efficient, reliable, and sustainable services to meet your business
+          needs.
+        </p>
+        <div class="service__grid">
+          <div class="service__card">
+            <img src="assets/service-1.jpg" alt="spot rentals" />
+            <h4>Spot Rentals</h4>
+            <p>
+              Short-term vehicle rentals for immediate, flexible transportation
+              needs.
+            </p>
+          </div>
+          <div class="service__card">
+            <img src="assets/service-2.jpg" alt="ETS" />
+            <h4>Employee Transportation</h4>
+            <p>
+              Reliable and comfortable commute solutions for your workforce,
+              tailored to your schedule.
+            </p>
+          </div>
+          <div class="service__card">
+            <img src="assets/service-3.jpg" alt="Long-Term" />
+            <h4>Long-Term Rentals</h4>
+            <p>
+              Cost-effective, extended vehicle rentals for ongoing business
+              requirements.
+            </p>
+          </div>
+          <div class="service__card">
+            <img src="assets/service-4.jpg" alt="EV" />
+            <h4>Electric Vehicles (EVs)</h4>
+            <p>
+              Eco-friendly transportation that cuts carbon emissions without
+              compromising on efficiency.
+            </p>
+          </div>
+          <div class="service__card">
+            <img src="assets/service-5.jpg" alt="MSP" />
+            <h4>End-to-End Mobility</h4>
+            <p>
+              End-to-end mobility solutions, tailored to your business, ensuring
+              seamless and efficient transportation.
+            </p>
+          </div>
+          <div class="service__card">
+            <img src="assets/service-6.jpg" alt="Bus" />
+            <h4>Shuttle Services</h4>
+            <p>
+              Seamless shuttle services for airports, offices, and events,
+              ensuring timely and smooth group transport.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="customisation">
+      <div class="section__container customisation__container">
+        <p class="section__subheader">Our Edge</p>
+        <h2 class="section__header">
+          Reliable Rides, Powered by Expert Service
+        </h2>
+        <p class="section__description">
+          Our team of professionals is committed to providing reliable,
+          efficient, and well-maintained vehicles, ensuring a smooth and
+          comfortable journey every time.
+        </p>
+        <div class="customisation__grid">
+          <div class="customisation__card">
+            <h4><img src="assets/secure.png" alt="Safety" /></h4>
+            <p>100% Safety</p>
+          </div>
+          <div class="customisation__card">
+            <h4><img src="assets/eco-bulb.png" alt="Sustainable" /></h4>
+            <p>Eco-Driven</p>
+          </div>
+          <div class="customisation__card">
+            <h4><img src="assets/nanotechnology.png" alt="Technology" /></h4>
+            <p>Robust Tech</p>
+          </div>
+          <div class="customisation__card">
+            <h4><img src="assets/documentation.png" alt="Complainces" /></h4>
+            <p>Complainces</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="choose__container" id="choose">
+      <div class="choose__image">
+        <img src="assets/chooseus.png" alt="choose" />
+      </div>
+      <div class="choose__content">
+        <h2 class="section__header">
+          Why <span style="color: #da042a">Choose Us?</span>
+        </h2>
+        <p class="section__description">
+          Discover the difference with our car rental service. We offer reliable
+          vehicles, exceptional customer service, and competitive pricing to
+          ensure a seamless rental experience.
+        </p>
+        <div class="choose__grid">
+          <div class="choose__card">
+            <span><i class="ri-customer-service-line"></i></span>
+            <div>
+              <h4>Customer Support</h4>
+              <p>Our dedicated support team is available to assist you 24/7.</p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-map-pin-line"></i></span>
+            <div>
+              <h4>Many Locations</h4>
+              <p>Easy pick-up and drop-off tailored to your journey.</p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-wallet-line"></i></span>
+            <div>
+              <h4>Best Price</h4>
+              <p>Enjoy competitive rates and great value for every rental.</p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-user-star-line"></i></span>
+            <div>
+              <h4>Experience Driver</h4>
+              <p>Reliable, professional drivers available upon request.</p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-verified-badge-line"></i></span>
+            <div>
+              <h4>Tailored Solutions</h4>
+              <p>Flexible plans to match your unique business needs.</p>
+            </div>
+          </div>
+          <div class="choose__card">
+            <span><i class="ri-calendar-close-line"></i></span>
+            <div>
+              <h4>Easy Cancellations</h4>
+              <p>Flexible bookings with easy cancellation options.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="section__container contact__container">
+        <div class="contact__content">
+          <p class="section__subheader">CONTACT US</p>
+          <h2 class="section__header">
+            Experience the Joy of a Ride That Feels Brand New
+          </h2>
+          <p class="section__description">
+            Enjoy the journey with our meticulously maintained vehicles,
+            delivering comfort and reliability every mile of the way.
+          </p>
+          <ul class="contact__links">
+            <li>
+              <p>
+                <span><i class="ri-phone-fill"></i></span>&nbsp;&nbsp;
+                <a href="tel:+91 9999160740">+91 9999160740</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span><i class="ri-mail-fill"></i></span>&nbsp;&nbsp;
+                <a href="mailto:sanjay@imsolutions.org.in">
+                  sanjay@imsolutions.org.in</a
+                >, &nbsp;<a href="mailto:rupin@imsolutions.org.in">
+                  rupin@imsolutions.org.in</a
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <span><i class="ri-map-pin-fill"></i></span>&nbsp;&nbsp;
+                <a
+                  href="https://www.google.com/maps/place/4th+floor,+F,+E3%2F1,+Block+E,+DLF+Phase+1,+Sector+26A,+Gurugram,+Haryana+122002/@28.4644591,77.0972359,17z/data=!3m1!4b1!4m5!3m4!1s0x390d18d2f4ce14d5:0x3631601dded16781!8m2!3d28.4644591!4d77.0998108?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  >4th floor, F, E-1/7, Block E, DLF Phase 1, Sector 26A,
+                  Gurugram, Haryana 122002</a
+                >
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container testimonial__container" id="client">
+      <p class="section__subheader">CLIENT TESTIMONIALS</p>
+      <h2 class="section__header">100% Approved By Customers</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <img src="assets/testimonial-1.jpg" alt="testimonial" />
+              <p>
+                The employee transportation service is exceptional! Always on
+                time, reliable, and stress-free for our team. Highly
+                recommended!
+              </p>
+              <h4>- Sarah T.</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <img src="assets/testimonial-2.jpg" alt="testimonial" />
+              <p>
+                Their EV rentals are a game-changer! Sustainable,
+                cost-effective, and perfectly suited for our business needs.
+              </p>
+              <h4>- John P.</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial__card">
+              <img src="assets/testimonial-3.jpg" alt="testimonial" />
+              <p>
+                From spot rentals to long-term solutions, their services are
+                top-notch. The convenience and professionalism are unmatched.
+              </p>
+              <h4>- David S.</h4>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <section class="map-section">
+      <div class="text-container">
+        <h3 class="section__subheader">Our</h3>
+        <h1 class="section__header">Location</h1>
+        <p class="section__description">Looking Forward to meet You soon!</p>
+        <img src="assets/location.png" alt="Location" />
+        <p class="section__description">
+          4th floor, F, E3/1, Block E, DLF Phase 1, Sector 26A, Gurugram,
+          Haryana 122002, India
+        </p>
+      </div>
+      <div id="map"></div>
+    </section>
+
+    <div class="section__container subscribe__container">
+      <div class="subscribe__content">
+        <p class="section__subheader">OUR NEWSLETTER</p>
+        <h2 class="section__header">Subscribe To Our Newsletter</h2>
+        <p class="section__description">
+          Subscribe to our newsletter and receive exclusive content, expert
+          insights, and special offers delivered directly to your inbox.
+        </p>
+      </div>
+      <div class="subscribe__form">
+        <form action="/">
+          <input type="text" placeholder="Your Email" />
+          <button class="btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer" id="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <div class="logo footer__logo">
+            <a href="#"
+              ><img src="assets/IMS_2.png" alt="logo" style="max-width: 680px"
+            /></a>
+          </div>
+          <p class="section__description">
+            At International Mobility Solutions, we bring years of expertise to
+            deliver unparalleled excellence in car rental and mobility
+            solutions.
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-google-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-instagram-line"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-youtube-line"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Contact Us</h4>
+          <ul class="footer__links">
+            <li>
+              <p>
+                Rediscover the joy of driving with a rejuvenated ride as we
+                pamper your car with expert precision and meticulous care,
+                ensuring it feels brand new again.
+              </p>
+            </li>
+            <li>
+              <p>
+                <span><i class="ri-phone-fill"></i></span>&nbsp;&nbsp;
+                <a href="tel:+91 9999160740">+91 9999160740</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                <span><i class="ri-mail-fill"></i></span>&nbsp;&nbsp;
+                <a href="mailto:sanjay@imsolutions.org.in">
+                  sanjay@imsolutions.org.in</a
+                >, &nbsp;<a href="mailto:rupin@imsolutions.org.in">
+                  rupin@imsolutions.org.in</a
+                >
+              </p>
+            </li>
+            <li>
+              <p>
+                <span><i class="ri-map-pin-fill"></i></span>&nbsp;&nbsp;
+                <a
+                  href="https://www.google.com/maps/place/4th+floor,+F,+E3%2F1,+Block+E,+DLF+Phase+1,+Sector+26A,+Gurugram,+Haryana+122002/@28.4644591,77.0972359,17z/data=!3m1!4b1!4m5!3m4!1s0x390d18d2f4ce14d5:0x3631601dded16781!8m2!3d28.4644591!4d77.0998108?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  >4th floor, F, E-1/7, Block E, DLF Phase 1, Sector 26A,
+                  Gurugram, Haryana 122002</a
+                >
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="footer__bar">
+      Copyright © 2025 International Mobility Solutions. All rights reserved.
+    </div>
+
+    <script>
+      mapboxgl.accessToken =
+        "pk.eyJ1Ijoia2FyYW53YWhsYSIsImEiOiJjbTVmbWtmODExbzdsMmlxb2s1enR3MXQ2In0.gun0fzVrciFOgZJRMmm6uA";
+      const map = new mapboxgl.Map({
+        container: "map", // container ID
+        style: "mapbox://styles/mapbox/light-v11",
+        center: [77, 28.4], // starting position [lng, lat]. Note that lat must be set between -90 and 90
+        zoom: 8, // starting zoom
+      });
+      const marker = new mapboxgl.Marker({ color: "red" }) // You can customize the color
+        .setLngLat([77.096149, 28.465928]) // Replace with your longitude and latitude
+        .addTo(map);
+
+      // Optionally add a popup to the marker
+      const popup = new mapboxgl.Popup({ offset: 25 })
+        .setText("International Mobility Solutions Pvt Ltd")
+        .addTo(map);
+
+      marker.setPopup(popup);
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
