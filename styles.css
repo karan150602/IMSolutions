@@ -577,7 +577,8 @@ nav {
 
 .footer__logo {
   max-width: 15rem;
-  margin-top: 1rem;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
   margin-left: 4rem;
   display: flex;
   align-items: center;
